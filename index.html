@@ -6,19 +6,19 @@
     <title>Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <span class="logo-text">SinanTechie</span>
+                <span class="logo-text">MY PORTFOLIO</span>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -30,14 +30,14 @@
             <div class="hero-content">
                 <div class="profile-card">
                     <div class="profile-image">
-                        <img src="https://via.placeholder.com/150x150/2dd4bf/ffffff?text=Profile" alt="Profile">
+                        <img src="images/arvel.jpg" alt="Profile">
                     </div>
-                    <h3>Sinan</h3>
+                    <h3>Arvel</h3>
                     <p class="title">Full-Stack Developer</p>
                     <div class="contact-info">
-                        <p><i class="fas fa-envelope"></i> sinan@example.com</p>
-                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
-                        <p><i class="fas fa-map-marker-alt"></i> New York, USA</p>
+                        <p><i class="fas fa-envelope"></i> arveldagcuta123@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +639107997542</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Philippines, Mindanao</p>
                     </div>
                     <button class="hire-btn">Hire Me</button>
                 </div>
@@ -46,7 +46,7 @@
                     <h1 class="hero-title">Developer</h1>
                     <div class="intro-text">
                         <h2>Hey</h2>
-                        <h2>I'm <span class="highlight">Sinan</span>,</h2>
+                        <h2>I'm <span class="highlight">Arvel Dagcuta</span>,</h2>
                         <h2>Full-Stack Developer</h2>
                         <p>I create digital experiences that combine beautiful design with powerful functionality. Let's build something amazing together.</p>
                         <button class="cta-btn">Let's Talk 👋</button>
@@ -55,7 +55,7 @@
                 
                 <div class="stats-sidebar">
                     <div class="stat-item">
-                        <span class="stat-number">4</span>
+                        <span class="stat-number">1</span>
                         <span class="stat-label">Years Experience</span>
                     </div>
                     <div class="stat-item">
@@ -63,7 +63,7 @@
                         <span class="stat-label">Projects Completed</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">8</span>
+                        <span class="stat-number">1</span>
                         <span class="stat-label">Happy Clients</span>
                     </div>
                 </div>
@@ -75,7 +75,6 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">01</span>
                 <h2 class="section-title">About Me</h2>
             </div>
             
@@ -100,7 +99,6 @@
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">02</span>
                 <div class="skills-icon">
                     <i class="fas fa-code"></i>
                 </div>
@@ -150,6 +148,65 @@
                 <div class="tech-icon react">
                     <i class="fab fa-react"></i>
                     <span>React</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together on your next project</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>sinan@example.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>New York, USA</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
                 </div>
             </div>
         </div>
