@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Portfolio</title>
+    <meta name="description" content="Arvel Dagcuta - Full-Stack Developer specializing in React, Node.js, and modern web technologies. Based in Philippines, Mindanao.">
+    <meta name="keywords" content="Full-Stack Developer, Web Developer, React, Node.js, JavaScript, Portfolio, Arvel Dagcuta">
+    <meta name="author" content="Arvel Dagcuta">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Arvel Dagcuta - Full-Stack Developer">
+    <meta property="og:description" content="Full-Stack Developer specializing in React, Node.js, and modern web technologies.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="arvel.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Arvel Dagcuta - Full-Stack Developer">
+    <meta name="twitter:description" content="Full-Stack Developer specializing in React, Node.js, and modern web technologies.">
+    
+    <title>Arvel Dagcuta - Full-Stack Developer Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body>
+    <!-- Skip to main content link for keyboard navigation -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <div class="logo">
                 <span class="logo-text">MY PORTFOLIO</span>
@@ -19,18 +38,25 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <main id="main-content">
+    <section id="home" class="hero" aria-label="Introduction">
         <div class="hero-container">
             <div class="hero-content">
                 <div class="profile-card">
                     <div class="profile-image">
-                        <img src="arvel.jpg" alt="Profile">
+                        <img src="arvel.jpg" alt="Arvel Dagcuta - Full-Stack Developer professional headshot">
                     </div>
                     <h3>Arvel</h3>
                     <p class="title">Full-Stack Developer</p>
@@ -39,7 +65,18 @@
                         <p><i class="fas fa-phone"></i> +639107997542</p>
                         <p><i class="fas fa-map-marker-alt"></i> Philippines, Mindanao</p>
                     </div>
-                    <button class="hire-btn">Hire Me</button>
+                    <div class="social-links">
+                        <a href="https://github.com/mrlowercase" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/arvel-dagcuta-240aa83a5/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://x.com/ADagcuta93055" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                    <button class="hire-btn" onclick="location.href='#contact'">Hire Me</button>
                 </div>
                 
                 <div class="hero-text">
@@ -49,7 +86,7 @@
                         <h2>I'm <span class="highlight">Arvel Dagcuta</span>,</h2>
                         <h2>Full-Stack Developer</h2>
                         <p>I create digital experiences that combine beautiful design with powerful functionality. Let's build something amazing together.</p>
-                        <button class="cta-btn">Let's Talk 👋</button>
+                        <button class="cta-btn" onclick="location.href='#contact'">Let's Talk 👋</button>
                     </div>
                 </div>
                 
@@ -59,7 +96,7 @@
                         <span class="stat-label">Years Experience</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">6</span>
+                        <span class="stat-number">3</span>
                         <span class="stat-label">Projects Completed</span>
                     </div>
                     <div class="stat-item">
@@ -72,7 +109,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about" aria-label="About me"></section>
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">About Me</h2>
@@ -83,20 +120,20 @@
                     <h3>Hello!</h3>
                     <p>I'm a passionate full-stack developer with expertise in modern web technologies. I love creating digital solutions that make a difference and help businesses grow.</p>
                     
-                    <p>With 4+ years of experience in web development, I specialize in React, Node.js, and cloud technologies. I'm always eager to learn new technologies and take on challenging projects.</p>
+                    <p>With 1 year of experience in web development, I specialize in React, Node.js, and cloud technologies. I'm always eager to learn new technologies and take on challenging projects.</p>
                     
                     <p>When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or enjoying a good cup of coffee while planning my next project.</p>
                 </div>
                 
                 <div class="about-image">
-                    <img src="https://via.placeholder.com/400x300/2dd4bf/ffffff?text=Workspace" alt="Developer workspace">
+                    <img src="workspace.jpg" alt="Modern developer workspace with computer, keyboard, and coding setup">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="skills" aria-label="Technical skills"></section>
         <div class="container">
             <div class="section-header">
                 <div class="skills-icon">
@@ -111,11 +148,9 @@
                     <h3>Frontend Development</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">React</span>
-                        <span class="skill-tag">Vue.js</span>
                         <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
                     </div>
                 </div>
                 
@@ -123,38 +158,141 @@
                     <h3>Backend Development</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Python</span>
                         <span class="skill-tag">Express</span>
                         <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">PostgreSQL</span>
                         <span class="skill-tag">REST APIs</span>
                     </div>
                 </div>
             </div>
             
-            <div class="tech-icons">
-                <div class="tech-icon html">
-                    <i class="fab fa-html5"></i>
+            <div class="tech-icons" role="list" aria-label="Technology icons">
+                <div class="tech-icon html" role="listitem">
+                    <i class="fab fa-html5" aria-hidden="true"></i>
                     <span>HTML</span>
                 </div>
-                <div class="tech-icon css">
-                    <i class="fab fa-css3-alt"></i>
+                <div class="tech-icon css" role="listitem">
+                    <i class="fab fa-css3-alt" aria-hidden="true"></i>
                     <span>CSS</span>
                 </div>
-                <div class="tech-icon js">
-                    <i class="fab fa-js-square"></i>
+                <div class="tech-icon js" role="listitem">
+                    <i class="fab fa-js-square" aria-hidden="true"></i>
                     <span>JS</span>
                 </div>
-                <div class="tech-icon react">
-                    <i class="fab fa-react"></i>
+                <div class="tech-icon react" role="listitem">
+                    <i class="fab fa-react" aria-hidden="true"></i>
                     <span>React</span>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="projects" aria-label="Portfolio projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Recent work I've completed</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="e-commerce.jpg" alt="E-Commerce Platform project">
+                        <div class="project-overlay">
+                            <a href="https://mrlowercase.github.io/CaseSensitive_PORTFOLIO/services.html" class="project-link" aria-label="View E-Commerce Platform">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Simple online shopping platform.</p>
+                        <div class="project-tags">
+                            <span>CSS</span>
+                            <span>Node.js</span>
+                            <span>HTML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="e-commerce2.jpg" alt="Task Management App project">
+                        <div class="project-overlay">
+                            <a href="https://mrlowercase.github.io/developers/Home.html" class="project-link" aria-label="View Task Manager">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Website</h3>
+                        <p>Simple online food shopping and other etc. platform.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="portbsed.jpg" alt="Weather Dashboard project">
+                        <div class="project-overlay">
+                            <a href="https://sites.google.com/view/ej-anez/home?authuser=0" class="project-link" aria-label="View Weather Dashboard">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio</h3>
+                        <p>BSED Portfolio.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials" aria-label="Client testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Clients Say</h2>
+                <p class="section-subtitle">Feedback from people I've worked with</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://ui-avatars.com/api/?name=EJ+Anes&background=2dd4bf&color=0f172a&size=80" alt="Ej">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>EJ Anes</h4>
+                            <p>BSED Student.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Arvel delivered a simple but impactful Portfolio."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" aria-label="Contact information"></section>
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Get In Touch</h2>
@@ -169,7 +307,7 @@
                         </div>
                         <div class="contact-details">
                             <h3>Email</h3>
-                            <p>sinan@example.com</p>
+                            <p>arveldagcuta123@gmail.com</p>
                         </div>
                     </div>
                     
@@ -179,7 +317,7 @@
                         </div>
                         <div class="contact-details">
                             <h3>Phone</h3>
-                            <p>+1 (555) 123-4567</p>
+                            <p>+639107997542</p>
                         </div>
                     </div>
                     
@@ -189,28 +327,47 @@
                         </div>
                         <div class="contact-details">
                             <h3>Location</h3>
-                            <p>New York, USA</p>
+                            <p>Philippines, Mindanao Gingoog City Malangka Villa Veronica</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="contact-form">
-                    <form>
+                    <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" aria-label="Contact form"></form>
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <label for="name" class="visually-hidden">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <label for="email" class="visually-hidden">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true">
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <label for="message" class="visually-hidden">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required aria-required="true"></textarea>
                         </div>
                         <button type="submit" class="submit-btn">Send Message</button>
+                        <div class="form-status" id="formStatus" role="alert" aria-live="polite"></div>
                     </form>
                 </div>
             </div>
+            
+            <!-- Google Map -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!3m2!1sen!2sph!4v1768397023051!5m2!1sen!2sph!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ0V0OHFtendF!2m2!1d8.81667821348663!2d125.088250584521!3f307.1679639342068!4f-6.976443705778522!5f0.7820865974627469" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Location map of Gingoog City, Mindanao, Philippines">
+                </iframe>
+            </div>
         </div>
     </section>
+    </main>
 </body>
 
 </html>
